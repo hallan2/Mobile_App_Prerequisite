@@ -10,16 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var tapCount = 0
+    var tapCount = 0  //initialize counting taps
     
-    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelName: UILabel! //Label
     
     
-    @IBAction func tap(_ sender: UIButton) {
+    @IBAction func tap(_ sender: UIButton) { //Button
         
-        tapCount+=1
+        tapCount+=1 //count number of taps
         
-        labelName.text = "You gave the puppy \(tapCount) treats!"
+        labelName.text = "You gave the puppy \(tapCount) treats!" //change label to show number of taps
     }
     
     override func viewDidLoad() {
